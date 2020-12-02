@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <title>BLAZER BANK</title>
+        <!-- Bootstrap 5 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Custom Styles by Matt Larson -->
+        <link href="css/style.css" rel="stylesheet" id="theme-link">
+    </head>
+    <body class="container-fluid">
+        <header>
+            <!-- Start Navigation -->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top
+                bg-primary" id="navbar">
+                <div class="container-fluid" id="nav-cont">
+                    <a class="navbar-brand" href="index.html">BLAZER BANK</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto mb-2 mb-md-0"
+                            id="navbarCollapse">
+                            <li class="nav-item active">
+                                <a class="nav-link" aria-current="page"
+                                    href="index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="checking.html">CHECKING</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="savings.html">SAVINGS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="loans.html">LOANS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">ABOUT US</a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="contact.html"
+                                    tabindex="-1"
+                                    aria-disabled="true">
+                                    CONTACT US
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-toggle"
+                                    id="dark-mode-btn">DARK MODE</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--End Navigation -->
+            </header>
+            <div class="container-fluid" id="checking-breadcrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <svg
+                                width="1.5em"
+                                height="1.5em"
+                                viewBox="0 0 16
+                                16"
+                                class="bi
+                                bi-house-door"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0
+                                    0 1 .708 0l6
+                                    6a.5.5 0 0 1 .146.354v7a.5.5 0 0
+                                    1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5
+                                    0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0
+                                    0 1 .146-.354l6-6zM2.5
+                                    7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0
+                                    0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" />
+                                    <path fill-rule="evenodd" d="M13
+                                        2.5V6l-2-2V2.5a.5.5 0 0 1
+                                        .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                    </svg>
+                                </li>
+                                <li class="breadcrumb-item sticky-top">
+                                    <a class="breadcrumb-item"
+                                        href="index.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item sticky-top"
+                                    aria-current="page">
+                                    Contact Us
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <main class="containter-fluid">
+                        <div class="container-fluid main-content">
+                            <!--Start Row1-->
+                            <div class="row main-row">
+                                <div class="col-5 form-col">
+                                    <h2 class="text-white" style="font-size:
+                                        2em">Contact Us Today</h2>
+                                    <hr>
+                                    <div class="row first-last-name-input">
+                                        <div class="col col-auto">
+                                            <div class="form-floating mb-3">
+                                                <input
+                                                    type="name"
+                                                    class="form-control"
+                                                    id="floatingInput"
+                                                    placeholder="First Name">
+                                                <label for="floatingInput"
+                                                    style="font-size: 1em;">
+                                                    First
+                                                    Name
+                                                    <span style="color:
+                                                        red;"> *</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col col-auto input-col">
+                                            <div class="form-floating mb-3">
+                                                <input
+                                                    type="name"
+                                                    class="form-control"
+                                                    id="floatingInput"
+                                                    placeholder="Last Name">
+                                                <label for="floatingInput"
+                                                    style="font-size: 1em;;">
+                                                    Last
+                                                    Name
+                                                    <span style="color:
+                                                        red;"> *</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row email-input-row">
+                                        <div class="form-floating mb-3">
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="floatingInput"
+                                                placeholder="name@example.com">
+                                            <label for="floatingInput"
+                                                style="font-size: 1em;">
+                                                Email
+                                                Address
+                                                <span style="color:
+                                                    red;"> *</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row existing-cust-row">
+                                        <p class="text-left text-white"
+                                            style="font-size: 1em;">
+                                            Are you an
+                                            existing customer?
+                                            <span style="color:red;"> *</span>
+                                        </p>
+                                        <div class="row customer-yes-no">
+                                            <div class="col col-auto">
+                                                <div class="form-check
+                                                    form-check-inline">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio"
+                                                        name="inlineRadioOptions"
+                                                        id="inlineRadio1"
+                                                        value="option1">
+                                                    <label
+                                                        class="form-check-label
+                                                        text-white"
+                                                        for="inlineRadio1">Yes</label>
+                                                </div>
+                                                <div class="form-check
+                                                    form-check-inline">
+                                                    <input
+                                                        class="form-check-input"
+                                                        type="radio"
+                                                        name="inlineRadioOptions"
+                                                        id="inlineRadio1"
+                                                        value="option1">
+                                                    <label
+                                                        class="form-check-label
+                                                        text-white"
+                                                        for="inlineRadio1">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row comment-box-row">
+                                        <div class="form-group">
+                                            <label for="FormControlTextarea1">
+                                                <span style="color: white;">
+                                                    Leave
+                                                    a Comment
+                                                </span>
+                                            </label>
+                                            <textarea class="form-control"
+                                                id="FormControlTextarea1"
+                                                rows="5"></textarea>
+                                        </div>
+                                        <button type="button" class="btn
+                                            btn-success"
+                                            id="contact-submit-btn">Submit</button>
+                                    </div>
+                                </div>
+                                <div class="col-7 text-col contact-us-col">
+                                    <div class="row about-title-row">
+                                        <h2 class="text-white text-center
+                                            text-uppercase">
+                                            A global company
+                                            with a local focus
+                                        </h2>
+                                        <hr>
+
+                                        <br>
+                                    </div>
+                                    <div class="row bank-location-row">
+                                        <div class="col text-center
+                                            contact-us-col">
+                                            <span class="dot">
+                                                <svg
+                                                    width="3em"
+                                                    height="3em"
+                                                    viewBox="0 0 16 16"
+                                                    class="bi bi-geo-alt
+                                                    bi-contact"
+                                                    fill="#0d6efd"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M12.166 8.94C12.696
+                                                        7.867 13 6.862 13 6A5 5
+                                                        0 0 0 3 6c0 .862.305
+                                                        1.867.834 2.94.524 1.062
+                                                        1.234 2.12 1.96
+                                                        3.07A31.481 31.481 0 0 0
+                                                        8 14.58l.208-.22a31.493
+                                                        31.493 0 0 0
+                                                        1.998-2.35c.726-.95
+                                                        1.436-2.008 1.96-3.07zM8
+                                                        16s6-5.686 6-10A6 6 0 0
+                                                        0 2 6c0 4.314 6 10 6
+                                                        10z" />
+                                                        <path
+                                                            fill-rule="evenodd"
+                                                            d="M8 8a2 2 0 1 0
+                                                            0-4 2 2 0 0 0 0 4zm0
+                                                            1a3 3 0 1 0 0-6 3 3
+                                                            0 0 0 0 6z" />
+                                                        </svg>
+                                                    </span>
+                                                    <br>
+                                                    <div class="row
+                                                        contact-headlines">
+                                                        <h2>ADDRESS</h2>
+                                                    </div>
+                                                    <div class="row">
+                                                        <h5
+                                                            class="contact-title">
+                                                            Blazer
+                                                            Bank North
+                                                        </h5>
+                                                    </div>
+                                                    <div class="row contact">
+                                                        <p class="contact-info">
+                                                            123
+                                                            Main St.
+                                                        </p>
+                                                        <p class="contact-info">
+                                                            Happytown,
+                                                            USA
+                                                        </p>
+                                                    </div>
+                                                    <div class="row contact"></div>
+                                                    <br>
+                                                    <br>
+                                                    <div class="row">
+                                                        <h5
+                                                            class="contact-title">
+                                                            Blazer
+                                                            Bank South
+                                                        </h5>
+                                                    </div>
+                                                    <div class="row contact">
+                                                        <p class="contact-info">
+                                                            321
+                                                            Blazer Dr.
+                                                        </p>
+                                                        <p class="contact-info">
+                                                            Bank
+                                                            City, USA
+                                                        </p>
+                                                    </div>
+                                                    <div class="row contact"></div>
+                                                </div>
+                                                <div class="col text-center
+                                                    contact-us-col">
+                                                    <span class="dot">
+                                                        <svg
+                                                            width="3em"
+                                                            height="3em"
+                                                            viewBox="0 0 16 16"
+                                                            class="bi
+                                                            bi-telephone
+                                                            bi-contact"
+                                                            fill="#0d6efd"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                fill-rule="evenodd"
+                                                                d="M3.654
+                                                                1.328a.678.678 0
+                                                                0
+                                                                0-1.015-.063L1.605
+                                                                2.3c-.483.484-.661
+                                                                1.169-.45
+                                                                1.77a17.568
+                                                                17.568 0 0 0
+                                                                4.168 6.608
+                                                                17.569 17.569 0
+                                                                0 0 6.608
+                                                                4.168c.601.211
+                                                                1.286.033
+                                                                1.77-.45l1.034-1.034a.678.678
+                                                                0 0
+                                                                0-.063-1.015l-2.307-1.794a.678.678
+                                                                0 0
+                                                                0-.58-.122l-2.19.547a1.745
+                                                                1.745 0 0
+                                                                1-1.657-.459L5.482
+                                                                8.062a1.745
+                                                                1.745 0 0
+                                                                1-.46-1.657l.548-2.19a.678.678
+                                                                0 0
+                                                                0-.122-.58L3.654
+                                                                1.328zM1.884.511a1.745
+                                                                1.745 0 0 1
+                                                                2.612.163L6.29
+                                                                2.98c.329.423.445.974.315
+                                                                1.494l-.547
+                                                                2.19a.678.678 0
+                                                                0 0
+                                                                .178.643l2.457
+                                                                2.457a.678.678 0
+                                                                0 0
+                                                                .644.178l2.189-.547a1.745
+                                                                1.745 0 0 1
+                                                                1.494.315l2.306
+                                                                1.794c.829.645.905
+                                                                1.87.163
+                                                                2.611l-1.034
+                                                                1.034c-.74.74-1.846
+                                                                1.065-2.877.702a18.634
+                                                                18.634 0 0
+                                                                1-7.01-4.42
+                                                                18.634 18.634 0
+                                                                0
+                                                                1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                                                                />
+                                                            </svg>
+                                                        </span>
+                                                        <div class="row
+                                                            contact-headlines">
+                                                            <h2>PHONE</h2>
+                                                        </div>
+                                                        <div class="row">
+                                                            <h5
+                                                                class="contact-title">
+                                                                Blazer
+                                                                Bank North
+                                                            </h5>
+                                                        </div>
+                                                        <div class="row
+                                                            contact">
+                                                            <a
+                                                                class="contact-info"
+                                                                href="tel:555-555-5555">555-555-5555</a>
+                                                        </div>
+                                                        <div class="row
+                                                            contact"></div>
+                                                        <br>
+                                                        <br>
+                                                        <br>
+                                                        <div class="row">
+                                                            <h5
+                                                                class="contact-title">
+                                                                Blazer
+                                                                Bank South
+                                                            </h5>
+                                                        </div>
+                                                        <div class="row
+                                                            contact">
+                                                            <a
+                                                                class="contact-info"
+                                                                href="tel:555-555-5555">555-000-5500</a>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col
+                                                        contact-us-col
+                                                        text-center">
+                                                        <span class="dot">
+                                                            <svg
+                                                                width="3em"
+                                                                height="3em"
+                                                                viewBox="0 0 16
+                                                                16"
+                                                                class="bi
+                                                                bi-chat-left-text
+                                                                bi-contact"
+                                                                fill="#0d6efd"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    fill-rule="evenodd"
+                                                                    d="M14 1H2a1
+                                                                    1 0 0 0-1
+                                                                    1v11.586l2-2A2
+                                                                    2 0 0 1
+                                                                    4.414
+                                                                    11H14a1 1 0
+                                                                    0 0 1-1V2a1
+                                                                    1 0 0
+                                                                    0-1-1zM2 0a2
+                                                                    2 0 0 0-2
+                                                                    2v12.793a.5.5
+                                                                    0 0 0
+                                                                    .854.353l2.853-2.853A1
+                                                                    1 0 0 1
+                                                                    4.414
+                                                                    12H14a2 2 0
+                                                                    0 0 2-2V2a2
+                                                                    2 0 0
+                                                                    0-2-2H2z" />
+                                                                    <path
+                                                                        fill-rule="evenodd"
+                                                                        d="M3
+                                                                        3.5a.5.5
+                                                                        0 0 1
+                                                                        .5-.5h9a.5.5
+                                                                        0 0 1 0
+                                                                        1h-9a.5.5
+                                                                        0 0
+                                                                        1-.5-.5zM3
+                                                                        6a.5.5 0
+                                                                        0 1
+                                                                        .5-.5h9a.5.5
+                                                                        0 0 1 0
+                                                                        1h-9A.5.5
+                                                                        0 0 1 3
+                                                                        6zm0
+                                                                        2.5a.5.5
+                                                                        0 0 1
+                                                                        .5-.5h5a.5.5
+                                                                        0 0 1 0
+                                                                        1h-5a.5.5
+                                                                        0 0
+                                                                        1-.5-.5z"
+                                                                        />
+                                                                    </svg>
+                                                                </span>
+                                                                <div class="row
+                                                                    contact-headlines">
+                                                                    <h2>EMAIL</h2>
+                                                                </div>
+                                                                <div
+                                                                    class="row
+                                                                    contact">
+                                                                    <h5
+                                                                        class="contact-title">
+                                                                        Customer
+                                                                        Service
+                                                                    </h5>
+
+                                                                </div>
+                                                                <div class="row
+                                                                    contact">
+                                                                    <a
+                                                                        class="contact-info"
+                                                                        href="mailto:the.machete.coder@gmail.com">Let
+                                                                        Us Help
+                                                                        You</a>
+                                                                </div>
+                                                                <br>
+                                                                <br>
+                                                                <br>
+                                                                <div
+                                                                    class="row
+                                                                    contact">
+                                                                    <h5
+                                                                        class="contact-title">
+                                                                        Blazer
+                                                                        Loan
+                                                                        Specialist
+                                                                    </h5>
+                                                                </div>
+                                                                <div class="row
+                                                                    contact">
+                                                                    <a
+                                                                        class="contact-info"
+                                                                        href="mailto:the.machete.coder@gmail.com">Let
+                                                                        Us Help
+                                                                        You</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Row1 -->
+                                    <!-- start footer -->
+                                    <footer class="container
+                                        footer">
+                                        <p class="float-right">
+                                            <a href="#"
+                                                style="color:
+                                                white">
+                                                Back
+                                                to top
+                                            </a>
+                                        </p>
+                                        <p class="footer-links
+                                            text-white">
+                                            &copy; 2020 Matt
+                                            Larson
+                                            &middot;
+                                            <a
+                                                href="mailto:themachetecoder@gmail.com"
+                                                style="color:
+                                                white">Email</a>
+                                            &middot;
+                                        </p>
+                                    </footer>
+                                </div>
+                            </main>
+                            <!-- javascript-->
+                            <script src="js/bootstrap.js"></script>
+                            <script src="js/scripts.js"></script>
+                        </body>
+                    </html>

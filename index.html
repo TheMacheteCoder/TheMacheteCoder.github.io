@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>BLAZER BANK</title>
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom Styles by Matt Larson -->
+    <link href="css/style.css" rel="stylesheet" id="theme-link">
+</head>
+
+<body class="container">
+    <header>
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top
+                bg-primary" id="navbar">
+            <div class="container-fluid" id="nav-cont">
+                <a class="navbar-brand" href="index.html">BLAZER BANK</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><a href="index.html"></a></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto mb-2 mb-md-0" id="navbarCollapse">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="checking.html">CHECKING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="savings.html">SAVINGS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="loans.html">LOANS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT
+                                US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html"  >CONTACT US
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-toggle" tabindex="-1" id="dark-mode-btn">DARK MODE</a>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+        </nav>
+        <!--End Navigation -->
+    </header>
+
+    <div class="row" id="under-nav-row">
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16"
+                        class="bi bi-house-door" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6
+                                        6a.5.5 0 0 1 .146.354v7a.5.5 0 0
+                                        1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5
+                                        0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0
+                                        0 1 .146-.354l6-6zM2.5
+                                        7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0
+                                        0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" />
+                        <path fill-rule="evenodd" d="M13
+                                            2.5V6l-2-2V2.5a.5.5 0 0 1
+                                            .5-.5h1a.5.5 0 0 1 .5.5z" />
+                    </svg></li>
+                <li class="breadcrumb-item"><a href="index.html" style="color:#fff200">Home</a></li>
+            </ol>
+        </nav>
+
+
+
+    </div>
+
+    </div>
+
+
+
+
+    <main class="containter-fluid">
+        <div class="container-flex main-content">
+            <!--Start Row1-->
+            <div class="row" id="row1">
+                <div class="col-3" id="checking-row1-col1">
+                    <div class="row logo-image">
+                        <picture>
+                            <source srcset="img/checking/BlazerBankLogoSmall.png" />
+                            <img class="img-fluid" id="checking-logo" src="img/checking/BlazerBankLogoSmall.png" alt="logo">
+                        </picture>
+                    </div>
+                    <div class="row login">
+                        <div class="container-fluid">
+                            <div class="col">
+                                <div class="card text-white bg-primary
+                                            mb-3
+                                            login-card" style="border: none;">
+                                    <div class="card-header" id="login-header">Login</div>
+                                    <div class="card-body login-card">
+                                        <form>
+                                            <div class="form-group
+                                                        login-form-group">
+                                                <label for="InputEmail" login-email-input style="font-size:
+                                                            large;">Email
+                                                    address</label>
+                                                <input type="email" class="form-control" id="inputEmail" placeholder="Enter
+                                                            email" autocomplete="current-email">
+                                            </div>
+                                            <div class="form-group
+                                                        login-form-group">
+                                                <label for="InputPassword" login-email-input style="font-size:
+                                                            large;">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword"
+                                                    placeholder="Password" autocomplete="current-password">
+                                            </div>
+                                            <div class="form-check" id="login-form-check">
+                                                <input type="checkbox" class="form-check-input" aria-label="RememberMe">
+                                                <label class="form-check-label" for="exampleCheck1" style="font-size:
+                                                            large;">
+                                                    Remember Me
+                                                </label>
+                                            </div>
+                                            <button type="submit" class="btn
+                                                        btn-success" id="login-submit-button"
+                                                onClick="login(this.form);">
+                                                Submit
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Col1-->
+                <!--Begin COl2-->
+                <div class="col-lg-9" id="checking-row1-col2">
+                    <!-- Row1-Col2 -Row1-->
+                    <div class="row">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active
+                                            first-carousel">
+                                    <img src="img/index/bank-interior-design.jpg" class="img-fluid"
+                                        alt="Responsive image">
+                                    <div class="container">
+                                        <div class="carousel-caption
+                                                    text-right
+                                                    justify-content-lg-end">
+                                            <h1>Blazer Checking</h1>
+                                            <p>
+                                                Our checking accounts
+                                                are
+                                                equipped with tools to
+                                                help
+                                                you manage money
+                                                efficiently
+                                                and make smart financial
+                                                decisions.
+                                            </p>
+                                            <p>
+                                                <a class="btn btn-lg
+                                                            btn-primary" href="checking.html" role="button">
+                                                    Sign up today
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/index/coins-in-jar.jpg" class="img-fluid" alt="Responsive
+                                                image">
+                                    <div class="container">
+                                        <div class="carousel-caption
+                                                    text-right
+                                                    justify-content-lg-end">
+                                            <h1 class="text-right">Blazer
+                                                Savings</h1>
+                                            <p class="text-right">
+                                                Our savings account
+                                                offers benefits and
+                                                rewards made to help you
+                                                hit
+                                                goals faster, along with
+                                                access to Bank of
+                                                America's broad network
+                                                of
+                                                support.
+                                            </p>
+                                            <p>
+                                                <a class="btn btn-lg
+                                                            btn-primary" id="savings-button" href="savings.html"
+                                                    role="button">
+                                                    Learn more
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/index/phone-banking.jpg" class="img-fluid" alt="Responsive
+                                                image">
+                                    <div class="container">
+                                        <div class="carousel-caption
+                                                    text-right">
+                                            <h1>Blazer Loans</h1>
+                                            <p>
+                                                Buying your first home
+                                                can be exciting and
+                                                overwhelming all at the
+                                                same
+                                                time – which is why we
+                                                have a variety of tools
+                                                and resources to help
+                                                you
+                                                through the experience.
+                                            </p>
+                                            <p>
+                                                <a class="btn btn-lg
+                                                            btn-primary" href="loans.html" role="button"
+                                                    id="savings-caption">
+                                                    Sign up today
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Col2-->
+            </div>
+            <hr>
+            <!--End of Row1-->
+            <div class="container-fluid headline-container">
+                <h1 class="headline" id="account-headline">Choose the
+                    account that works for you.</h2>
+            </div>
+            <!--Start Row2-->
+            <div class="container-flex" id="row2">
+                <div class="row row2">
+                    <div class="col checking-row2-col1">
+                        <div class="card mb-3">
+                            <img src="img/index/secure-bank.jpg" class="card-img-top" alt="security-checking">
+                            <div class="card-body">
+                                <h5 class="card-title">Blazer Checking</h5>
+                                <p class="card-text">We're here to
+                                    support you with products, services
+                                    and resources —
+                                    for whatever life stage you may be
+                                    experiencing
+                                </p>
+                                <a href="checking.html" class="btn
+                                            btn-primary btn-lg active" role="button" aria-pressed="true">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col checking-row2-col2">
+                        <div class="card mb-3">
+                            <img src="img/index/piggy-bank.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blazer Savings</h5>
+                                <h5 class="card-title"></h5>
+                                <p class="card-text">We're here when you
+                                    need us.
+                                    Along with 24/7 access online, you
+                                    can find us at thousands of ATMs and
+                                    financial
+                                    centers.</p>
+                                <a href="savings.html" class="btn
+                                            btn-primary btn-lg active" role="button" aria-pressed="true">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col checking-row2-col3">
+                        <div class="card mb-3">
+                            <img src="img/index/loans-calculator.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blazer Loans</h5>
+                                <p class="card-text">If you’ve found
+                                    your dream home, you’re securing
+                                    your
+                                    forever home or you need a low rate
+                                    on purchasing or refinancing a car.</p>
+                                <a href="loans.html" class="btn
+                                            btn-primary btn-lg active" role="button" aria-pressed="true">Get
+                                    Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- FOOTER -->
+            <footer class="container footer">
+                <p class="float-right">
+                    <a href="#" style="color:white">Back to top</a>
+                </p>
+                <p class="footer-links">
+                    &copy; 2020 Matt Larson &middot;
+                    <a href="mailto:themachetecoder@gmail.com" style="color:white">Email</a>
+                    &middot;
+                    
+                </p>
+            </footer>
+    </main>
+
+
+    <!-- javascript-->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
